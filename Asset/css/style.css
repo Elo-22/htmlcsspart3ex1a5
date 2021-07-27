@@ -1,0 +1,122 @@
+
+/*Police titre*/
+@font-face {
+    font-family: "Police titre" ;
+    src: url("../Fonts/milkyroad.ttf");
+}
+/*La barre de navigation, 1 police, 2 et reste pour conception*/
+@font-face {
+    font-family: "moonrising" ;
+    src: url("../Fonts/Moonrising.ttf");
+}
+/*Police pour le corp du texte*/
+@font-face {
+    font-family: "aquarion" ;
+    src: url("../Fonts/Aquarion.otf");
+}
+/*Reset du css */
+* {
+    padding:0% ;
+    margin:0% ;
+    box-sizing: border-box; */
+}
+
+
+/*Couleur fond entier */
+html, body { 
+    width: 100vw;
+    height: 100vh ;
+    background-color: rgb(223, 213, 159);
+    overflow-x: hidden;
+    }
+/*Exercice 1 image header" */
+header {
+height: 50%;
+background-image:url("../Image/header.jpg.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 40px;
+font-family: "Police titre" ;
+}
+
+nav ul {
+    list-style-type:none;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "moonrising";
+    
+}
+
+li a {
+    color:gray;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(243, 228, 179);
+}
+
+li a.active {
+    color: #78b3ca;
+    background-color: #d6c358;
+}
+/*Barre de recherche ASPECT 1*/
+#searchForm input{
+    padding: 4px;
+    border-radius: 10px;
+    border: 2px solid #5489ce;
+    font-family: "moonrising";
+    
+}
+/*Boutton recherche ASPECT 2*/
+#searchbutton {
+    background-color:#bedae5;
+    border: 2px solid #5489ce;
+    
+}
+
+ #divtous {
+    display: flex;
+    font-family: "aquarion";
+}   
+
+section#présentation {
+    width: 40vw;
+    background-color:rgba(34, 22, 12, 0.897);
+    /* height: 100vh ; */
+    font-size: 25px;
+    font-family: "aquarion";
+    color: white;
+    padding: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#contener {
+    width: 60vw;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   
+}
+.partie {
+    width: 45%
+      
+}
+.box {
+    width:100%;
+      
+}
+
+
+
